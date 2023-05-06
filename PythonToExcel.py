@@ -8,8 +8,8 @@ ws.title = 'First Sheet'
 wb.create_sheet(index=1, title='Second Sheet')
 
 ws['A1'] = 'Invoice'
-ws['A1'].font = Font(name='Times New Roman', size = 24, bold=True, italic=False)
-myfont = Font(name='Times New Roman', size = 24, bold=True, italic=False)
+ws['A1'].font = Font(name='Calibri', size = 24, bold=True, italic=False)
+myfont = Font(name='Calibri', size = 24, bold=True, italic=False)
 ws['A1'].font = myfont
 
 ws['A2'] = 'Tires'

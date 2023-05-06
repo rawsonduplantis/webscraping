@@ -1,11 +1,6 @@
 import openpyxl as xl
 
 wb = xl.load_workbook('example.xlsx')
-sn = wb.sheetnames
-
-print()
-print(sn)
-print()
 
 sheet1 = wb['Sheet1']
 cellA1 = sheet1['A1']
@@ -13,21 +8,14 @@ cellA1 = sheet1['A1']
 print(cellA1.value)
 print(type(cellA1.value))
 
-print()
-
 print(cellA1.row)
 print(cellA1.column)
 print(cellA1.coordinate)
 
-print()
-
 print(sheet1.cell(1,2).value)
-
-print()
 
 print(sheet1.max_row)
 print(sheet1.max_column)
-print()
 
 for fruit in range(1, sheet1.max_row + 1):
     print(sheet1.cell(fruit, 2).value)
@@ -49,4 +37,3 @@ for currentrow in sheet1.iter_rows(min_row=2, max_row=sheet1.max_row, max_col=sh
     print(currentrow[0].value)
     print(currentrow[1].value)
     print(currentrow[2].value)
-    print()

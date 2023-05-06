@@ -1,2 +1,4 @@
 .venvWS/
 1notes.md
+__pycache__/
+keys.py
